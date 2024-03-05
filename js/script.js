@@ -1,5 +1,5 @@
-const output = document.querySelector(".member")
-
+const intOutput = document.querySelector(".intestazione");
+const output = document.querySelector(".member");
 
 const ourTeam = [
   {
@@ -34,9 +34,19 @@ const ourTeam = [
   }
 ];
 
-// for(let prova in ourTeam){
-//   console.log(prova, ourTeam[prova]);
-// }
+for(let prova in ourTeam){
+  console.log(prova, ourTeam[prova]);
+}
+
+// Intestazione
+intOutput.innerHTML += `
+<div class="text-center mb-2 p-4">
+  <h4 class="my-1 fw-bold">OUR TEAM</h4>
+
+  <p class="mb-3 mx-5 p-5 text-secondary ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eum dolores nobis, eos architecto reprehenderit ipsum! Amet nisi rerum maxime placeat, eveniet quia minus, ab nulla illo aliquam dolorem saepe.</p>
+</div>
+
+`;
 
 
 // VISUALIZZO LE CARD
@@ -45,12 +55,12 @@ for(let membro of ourTeam){
   
   output.innerHTML += `
   
-  <div class="col">
-        <div class="card" style="width: 18rem;">
-        <img src="${membro.img}" class="card-img-top" alt="${membro.nome}">
-          <div class="card-body">
-            <h5 class="card-title">${membro.nome}</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">${membro.ruolo}</h6>
+  <div class="col d-flex justify-content-center ">
+        <div class="card text-center rounded-0 mb-5 " style="width: 18rem;">
+        <img src="${membro.img}" class="card-img-top rounded-0 " alt="${membro.nome}">
+          <div class="card-body ">
+            <p class="card-title color-name font-name fs-5">${membro.nome}</p>
+            <p class="card-subtitle font-name color-name mb-2 text-body-secondary">${membro.ruolo}</p>
             
           </div>
         </div>
