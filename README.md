@@ -28,4 +28,7 @@ Scott Estrada	Developer				scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer		barbara-ramos-graphic-designer.jpg
 
 ## Procedimento
-1. 
+1. Creo un array di oggetti e lo riempio con i dati forniti.
+1. Stampo il contenuto in console.log
+1. Stampo il contenuto sul DOM
+1. Stampo sul DOM tramite una card il contenuto con le immagini.
